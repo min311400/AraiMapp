@@ -122,9 +122,17 @@
         <h4>What is your draem place?</h4>
         <script language="javascript" src="JS/fSubmit.js"></script>
         <form action="" method="post" name="typeR" onSubmit="JavaScript:return fncSubmit();">
-            <input type="radio" name="tR" id="R1" value="Single Home"> Single Home </input> &nbsp&nbsp
-            <input type="radio" name="tR" id="R2" value="Condominium"> Condominium </input> &nbsp&nbsp
-            <input type="radio" name="tR" id="R3" value="Townhouse"> Townhouse </input>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="tR" id="R1" value="Single Home"> Single Home </input> &nbsp&nbsp
+                </div>
+                <div class="col-sm-4">
+                    <input type="radio" name="tR" id="R2" value="Condominium"> Condominium </input> &nbsp&nbsp
+                </div>
+                <div class="col-sm-4">
+                    <input type="radio" name="tR" id="R3" value="Townhouse"> Townhouse </input>
+                </div>
+            </div>
             <button type="submit" name="btnSubmit" class="btn btn-info btn-lg" data-toggle="modal" onclick="Func1()" data-target="#myModal">Select</button>
 
         </form>
