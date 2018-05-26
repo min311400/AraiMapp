@@ -53,35 +53,35 @@ $(document).ready(function(){
         $(".Content1").removeClass("w3-hide");
         $(".Content3").removeClass("w3-hide");
         $(".Content4").addClass("w3-hide");
-        $(".Content1").removeClass("w3-hide");
+        $(".ContentP").removeClass("w3-hide");
     });
 
     $(".Content61").click(function(){
         $(".Content5").removeClass("w3-hide");
         $(".Content7").removeClass("w3-hide");
         $(".Content6").addClass("w3-hide");
-        $(".Content1").removeClass("w3-hide");
+        $(".ContentP").removeClass("w3-hide");
     });
   
     $(".Content41").click(function(){
         $(".Content5").removeClass("w3-hide");
         $(".Content7").removeClass("w3-hide");
         $(".Content8").addClass("w3-hide");
-        $(".Content1").removeClass("w3-hide");
+        $(".ContentP").removeClass("w3-hide");
     });
 
     $(".Content101").click(function(){
         $(".Content9").removeClass("w3-hide");
         $(".Content12").removeClass("w3-hide");
         $(".Content10").addClass("w3-hide");
-        $(".Content1").removeClass("w3-hide");
+        $(".ContentP").removeClass("w3-hide");
     });
   
     $(".Content131").click(function(){
         $(".Content9").removeClass("w3-hide");
         $(".Content10").removeClass("w3-hide");
         $(".Content13").addClass("w3-hide");
-        $(".Content1").removeClass("w3-hide");
+        $(".ContentP").removeClass("w3-hide");
     });
 
 
