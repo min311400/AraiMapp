@@ -24,7 +24,7 @@
 </head>
 
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" class="font" data-spy="scroll" data-target=".navbar" data-offset="60">
 <!--________________Menu_NavBar_______________________-->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -48,7 +48,7 @@
                     <a href="#contact">CONTACT US</a>
                 </li>
                 <li>
-                        <a href="#map">Sign in</a>
+                        <a href="#ma">Sign in</a>
                 </li>
             </ul>
         </div>
@@ -57,7 +57,6 @@
 <!--________________Heading_______________________-->
 <div class="jumbotron text-center">
     <h1>ARAIMAP</h1>
-    <h2>Szong Min Punch</h2>
     <p>"Select your dream home"<p>
 
 
@@ -120,14 +119,7 @@
  <div id="roadmap" class="container-fluid bg text-center">
     <h1 class="one">Select location type you want</h1>
     <h4>What is your draem place?</h4>
-    <script language="javascript">
-            function fncSubmit() {
-                if (document.typeR.R1.checked == true || document.typeR.R2.checked == true || document.typeR.R3.checked == true) {
-                    return false;              
-                }
-                document.form1.submit();
-            }
-        </script>
+    <script language="javascript" src="JS/fSubmit.js"></script>
     <form action="" method="post" name="typeR" onSubmit="JavaScript:return fncSubmit();">
             <input type="radio" name="tR" id="R1" value="Single Home"> Single Home </input> &nbsp&nbsp
             <input type="radio" name="tR" id="R2" value="Condominium"> Condominium </input> &nbsp&nbsp
@@ -135,19 +127,7 @@
             <button type="submit" name="btnSubmit" class="btn btn-info btn-lg" data-toggle="modal" onclick="Func1()" data-target="#myModal">Select</button>
     
     </form>
-    <script>
-            function Func1() {
-                if (document.typeR.R1.checked == true) {
-                    document.getElementById("field2").value = document.getElementById("R1").value;
-                }
-                else if (document.typeR.R2.checked == true) {
-                    document.getElementById("field2").value = document.getElementById("R2").value;
-                }
-                else if (document.typeR.R3.checked == true) {
-                    document.getElementById("field2").value = document.getElementById("R3").value;
-                }
-            }
-    </script>
+    <script src="JS/fSelect.js"></script>
     <br>
     
     
@@ -157,7 +137,7 @@
         <div class="modal-dialog">
 
             <!-- Modal content-->
-            <div class="modal-content text-left" style="margin-top:20%">
+            <div class="modal-content text-left" style="margin-top:20%;width: 100%">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         Choose: <input type="text" id="field2" disabled="disabled">
@@ -194,24 +174,24 @@
                         สิ่งอำนวยความสะดวก
                         <table style="width:100%">
                             <tr>
-                                <td><input type="checkbox" name="" value="bus"> สถานีรถประจำทาง</td>
-                                <td><input type="checkbox" name="" value="res"> ร้านอาหาร</td>
+                                <td><input type="checkbox" name="" value="bus" > สถานีรถประจำทาง</td>
+                                <td><input type="checkbox" name="" value="res" checked> ร้านอาหาร</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="" value="sch"> โรงเรียน</td>
-                                <td><input type="checkbox" name="" value="hos"> โรงพยาบาล</td>
+                                <td><input type="checkbox" name="" value="sch" checked> สถานศึกษา</td>
+                                <td><input type="checkbox" name="" value="hos" checked> โรงพยาบาล</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="" value="mini"> ร้านสะดวกซื้อ</td>
-                                <td><input type="checkbox" name="" value="poli"> สถานีตำรวจ</td>
+                                <td><input type="checkbox" name="" value="mini" checked> ร้านสะดวกซื้อ</td>
+                                <td><input type="checkbox" name="" value="poli" > สถานีตำรวจ</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="" value="mall"> ห้างสรรพสินค้า</td>
-                                <td><input type="checkbox" name="" value="ent"> สถานบันเทิง</td>
+                                <td><input type="checkbox" name="" value="mall" > ห้างสรรพสินค้า</td>
+                                <td><input type="checkbox" name="" value="ent" > สถานบันเทิง</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>&nbsp&nbsp<form action="" onclick=""></form><input type="submit" value="Submit"></td>
+                                <td>&nbsp&nbsp<form action="" onclick=""></form><input type="submit" value="Submit" class="btn btn-default" data-dismiss="modal"></td>
                             </tr>
                         </table> <br>
 
@@ -237,8 +217,9 @@
 
 <!--________________Modal for Map_______________________-->
 <div class="w3-container text-center" >
+  <!--________________Parque Condo_______________________-->  
 <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top modal-sm " style="background-color: #fff;width: 50%">
+    <div class="w3-modal-content w3-animate-top modal-sm " style="background-color: #fff;width: 40%">
       <header class="w3-container one">
         <a href="#roadmap"> 
             <span onclick="document.getElementById('id01').style.display='none'"class="w3-button w3-display-topright">&times;</span>
@@ -247,14 +228,19 @@
       </header>
       <div class="w3-container">
 
-        <div class="Content1">
-            <h4>ห้อง 304 ขนาด 27 ตรม</h4>
-            <img  src="Picture/in.jpg" style="height: auto; width: 100%">
+        <div class="Content1 one">
+            <h3>ห้อง 304 ขนาด 27 ตรม</h3>
+            <img  src="Picture/Pin.jpg" style="height: auto; width: 100%">
+            <br>
+            <button class="btn btn-lg Content11">รายละเอียดห้อง</button>
+           
         </div>
 
-        <div class="Content3">
-            <h4>ห้อง 702 ขนาด 27 ตรม</h4>
-            <img  src="Picture/in1.jpg" style="height: auto; width: 100%">
+        <div class="Content3 one">
+            <h3>ห้อง 702 ขนาด 35 ตรม</h3>
+            <img  src="Picture/Pin1.jpg" style="height: auto; width: 100%">
+            <br>
+            <button class="btn btn-lg Content31">รายละเอียดห้อง</button>
         </div>
 
         <div class="Content2 w3-hide">
@@ -263,36 +249,166 @@
             <h4>อุทิศ ประชา</h4>
             <h4>096 xxx xxxx</h4>
             <br>
-            <img  src="Picture/in.jpg" style="height: auto; width: 100%">
+            <img  src="Picture/Pin.jpg" style="height: auto; width: 100%">
             <p>ห้องที่ 304 ขนาด 27 ตร.ม.
                     2 ห้องนอน 1 ห้องน้ำ
                     ระเบียงอยู่ทางฝั่งตะวันออก  
                     เห็นวิวห้องน้ำ
             </p>
-            <img  src="Picture/star.png" style="height: auto; width: 100%">
+            <img  src="Picture/star.png" style="height: auto; width: 50%">
+            <br><br>
+            <button class="btn btn-lg Content21">ย้อนกลับ</button>
         </div>
 
         <div class="Content4 w3-hide">
-                <h4>ห้อง 702 ขนาด 27 ตรม</h4>
+                <h4>ห้อง 702 ขนาด 35 ตรม</h4>
                 <img  src="Picture/pro.jpg" style="height: auto; width: 10%; text-align: left">
                 <h4>สวัสดิ์ สุขขา</h4>
                 <h4>081 xxx xxxx</h4>
                 <br>
-                <img  src="Picture/in1.jpg" style="height: auto; width: 100%">
+                <img  src="Picture/Pin1.jpg" style="height: auto; width: 100%">
                 <p>ห้องที่ 702 ขนาด 35 ตร.ม.
                         1 ห้องนอน 1 ห้องน้ำ
                         ระเบียงอยู่ทางฝั่งทิศใต้  
                         เห็นวิวสระว่ายน้ำ
                 </p>
-                <img  src="Picture/star.png" style="height: auto; width: 100%">
+                <img  src="Picture/star.png" style="height: auto; width: 50%">
+                <br><br>
+                <button class="btn btn-lg Content41">ย้อนกลับ</button>
             </div>
 
       </div>
-      <footer class="w3-container one" >
-        <p>Parque Condo</p>
-      </footer>
+      
     </div>
   </div>
+  <!--_________________________Library Houze Condo__________________________________-->
+  <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top modal-sm " style="background-color: #fff;width: 40%">
+          <header class="w3-container one">
+            <a href="#roadmap"> 
+                <span onclick="document.getElementById('id02').style.display='none'"class="w3-button w3-display-topright">&times;</span>
+            </a>
+            <h2>Library Houze Condo</h2>
+          </header>
+          <div class="w3-container">
+    
+            <div class="Content5 one">
+                <h3>ห้อง 804 ขนาด 25.5 ตรม</h3>
+                <img  src="Picture/Lin.jpg" style="height: auto; width: 100%">
+                <br>
+                <button class="btn btn-lg Content51">รายละเอียดห้อง</button>
+               
+            </div>
+    
+            <div class="Content7 one">
+                <h3>ห้อง 622 ขนาด 23 ตรม</h3>
+                <img  src="Picture/Lin1.jpg" style="height: auto; width: 100%">
+                <br>
+                <button class="btn btn-lg Content71">รายละเอียดห้อง</button>
+            </div>
+    
+            <div class="Content6 w3-hide">
+                <h4>ห้อง 804 ขนาด 25.5 ตรม</h4>
+                <img  src="Picture/pro.jpg" style="height: auto; width: 10%; text-align: left">
+                <h4>อุทิศ ประชา</h4>
+                <h4>096 xxx xxxx</h4>
+                <br>
+                <img  src="Picture/Lin.jpg" style="height: auto; width: 100%">
+                <p>ห้องที่ 804 ขนาด 25.5 ตร.ม.
+                        1 ห้องนอน 1 ห้องน้ำ
+                        ระเบียงอยู่ทางฝั่งตะวัตก  
+                        เห็นวิวห้องน้ำ
+                </p>
+                <img  src="Picture/star.png" style="height: auto; width: 50%">
+                <br><br>
+                <button class="btn btn-lg Content61">ย้อนกลับ</button>
+            </div>
+    
+            <div class="Content8 w3-hide">
+                    <h4>ห้อง 622 ขนาด 23 ตรม</h4>
+                    <img  src="Picture/pro.jpg" style="height: auto; width: 10%; text-align: left">
+                    <h4>สวัสดิ์ สุขขา</h4>
+                    <h4>081 xxx xxxx</h4>
+                    <br>
+                    <img  src="Picture/Lin1.jpg" style="height: auto; width: 100%">
+                    <p>ห้องที่ 622 ขนาด 23 ตร.ม.
+                            1 ห้องนอน 1 ห้องน้ำ
+                            ระเบียงอยู่ทางฝั่งทิศเหนือ  
+                            เห็นวิวสระว่ายน้ำ
+                    </p>
+                    <img  src="Picture/star.png" style="height: auto; width: 50%">
+                    <br><br>
+                    <button class="btn btn-lg Content81">ย้อนกลับ</button>
+                </div>
+    
+          </div>
+          
+        </div>
+      </div>
+      <!--________________The Cube Condo_______________________-->  
+<div id="id03" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top modal-sm " style="background-color: #fff;width: 40%">
+          <header class="w3-container one">
+            <a href="#roadmap"> 
+                <span onclick="document.getElementById('id03').style.display='none'"class="w3-button w3-display-topright">&times;</span>
+            </a>
+            <h2>The Cube Condo</h2>
+          </header>
+          <div class="w3-container">
+    
+            <div class="Content9 one">
+                <h3>ห้อง 524 ขนาด 27 ตรม</h3>
+                <img  src="Picture/Cin.jpg" style="height: auto; width: 100%">
+                <br>
+                <button class="btn btn-lg Content91">รายละเอียดห้อง</button>
+               
+            </div>
+    
+            <div class="Content12 one">
+                <h3>ห้อง 201 ขนาด 38 ตรม</h3>
+                <img  src="Picture/Cin1.jpg" style="height: auto; width: 100%">
+                <br>
+                <button class="btn btn-lg Content121">รายละเอียดห้อง</button>
+            </div>
+    
+            <div class="Content10 w3-hide">
+                <h4>ห้อง 524 ขนาด 27 ตรม</h4>
+                <img  src="Picture/pro.jpg" style="height: auto; width: 10%; text-align: left">
+                <h4>อุทิศ ประชา</h4>
+                <h4>096 xxx xxxx</h4>
+                <br>
+                <img  src="Picture/Cin.jpg" style="height: auto; width: 100%">
+                <p>ห้องที่ 524 ขนาด 27 ตร.ม.
+                        1 ห้องนอน 1 ห้องน้ำ
+                        ระเบียงอยู่ทางฝั่งตะวันออก  
+                        เห็นวิวห้องน้ำ
+                </p>
+                <img  src="Picture/star.png" style="height: auto; width: 50%">
+                <br><br>
+                <button class="btn btn-lg Content101">ย้อนกลับ</button>
+            </div>
+    
+            <div class="Content13 w3-hide">
+                    <h4>ห้อง 201 ขนาด 38 ตรม</h4>
+                    <img  src="Picture/pro.jpg" style="height: auto; width: 10%; text-align: left">
+                    <h4>สวัสดิ์ สุขขา</h4>
+                    <h4>061 xxx xxxx</h4>
+                    <br>
+                    <img  src="Picture/Cin1.jpg" style="height: auto; width: 100%">
+                    <p>ห้องที่ 201 ขนาด 38 ตร.ม.
+                            1 ห้องนอน 1 ห้องน้ำ
+                            ระเบียงอยู่ทางฝั่งทิศใต้  
+                            เห็นวิวสระว่ายน้ำ
+                    </p>
+                    <img  src="Picture/star.png" style="height: auto; width: 50%">
+                    <br><br>
+                    <button class="btn btn-lg Content131">ย้อนกลับ</button>
+                </div>
+    
+          </div>
+          
+        </div>
+      </div>
 </div>
 </div>
 <!--________________End of modal for map_______________________-->
@@ -307,17 +423,16 @@
 
         <div class="col-sm-8">
             <h2>ARAI MAP</h2>
-            <h4>เป็นแอพลิเคชั่ระบุตำแหน่งสิ่งอำนวยความสะดวกต่าง ๆ ในแผนที่ 
-                เพื่อช่วยในการตัดสินใจเลือกที่อยู่อาศัยของผู้ใช้งาน โดยจะระบุสถานที่สำคัญต่าง ๆ 
-                เช่น ห้างสรรพสินค้า มินิมาร์ท โรงพยาบาล โรงเรียน ป้ายขึ้น-ลงรถโดยสารประจำทาง สถานีรถไฟฟ้า BTS MRT 
-                โดยบอกข้อมูลของสิ่งเหล่านี้ในระนะขอบเขตที่ผู้ใช้กำหนด และรายละเอียดต่างๆของสถานที่ 
-                เพื่อช่วยให้ผู้ใช้สามารถตัดสินใจเลือกที่อยู่อาศัยได้ตรงกับความต้องการของตนเอง  
+            <h4>เป็นเว็ปไซต์ที่เป็นตัวกลางการขายหรือปล่อยเช่าและจัดหาที่อยู่อาศัย 
+                    ระหว่างผู้ขายกับลูกค้า และยังสามารถแสดงสถานที่อำนวยความสะดวกต่างๆ 
+                    เช่น โรงพยาบาล สถานศึกษา ร้านอาหาร หรืออื่นๆ ในระแวกใกล้เคียงของที่อยู่อาศัยที่ลูกค้าสนใจ 
+                    เพื่อเป็นตัวช่วยในการตัดสินใจเลือกซื้อหรือเช่าที่อยู่อาศัย 
             </h4>    
             <br><br>
             <button class="btn btn-lg">More about us</button>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 text-center">
             <span class="glyphicon glyphicon-globe logo slideanim"></span>
         </div>
 
@@ -325,13 +440,13 @@
 </div>
 
 <!--________________contact_______________________-->
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid ">
     <h1 class="text-center one ">Contact</h1>
     <br><br>
     <div class="row">
         <div class="col-sm-5">
             <h4>ติดต่อสอบถาม หรือแจ้งปัญหา</h4>
-            <p>หลังจากที่ทำการแจ้งเรื่องมาแล้วทาง จะทำแจ้งว่าได้รับเรื่องที่แจ้งภายใน 24 ชั่วโมง ไม่ทางใดก็ทางหนึ่ง</p>
+            <p>หลังจากได้รับการแจ้งเรื่องแล้ว ทางทีมงานจะติดต่อกลับภายใน 24 ชั่วโมง</p>
             <p>
                 <span class="glyphicon glyphicon-map-marker"></span> IT Support</p>
             <p>
@@ -360,6 +475,7 @@
             <textarea class="col-sm-12 form-control grey" id="comments" name="comments" placeholder="รายละเอียด" rows="5"></textarea>
             <br>
             <div class="row">
+                <div class="col-sm-12 form-group"></div>
                 <div class="col-sm-12 form-group">
                     <button class="btn btn-default pull-right grey" type="submit">Send</button>
                 </div>
@@ -372,8 +488,9 @@
     <a href="#myPage" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>ARAIMAP Web page Made By Tossaporn Kongsaen <br> and this is my
-        <a href="https://github.com/min311400" title="mil311400">Github</a>
+    <p>ARAIMAP Web page Made By ARAINA group  
+        <br>
+        This web is only use for ESRI App Challenge 
     </p>
 </footer>
 

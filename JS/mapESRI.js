@@ -72,8 +72,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"สถาศึกษา",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -108,8 +108,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"สถาศึกษา",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -146,8 +146,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"สถาศึกษา",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -182,8 +182,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"สถาศึกษา",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -218,8 +218,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"สถาศึกษา",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -253,9 +253,9 @@ require(["esri/map",
                       "yoffset" : 0
                     },
                     "infoTemplate":
-                      {"title":"Test Pop-up windows",
-                      "content":"Condo Name:${Name}"}
-                    };
+                    {"title":"สถาศึกษา",
+                    "content":"${Name}"}
+                  };
           
                     var gra = new Graphic(myPoint);
                     map.graphics.add(gra);
@@ -291,8 +291,8 @@ require(["esri/map",
                       "yoffset" : 0
                     },
                     "infoTemplate":
-                      {"title":"Test Pop-up windows",
-                      "content":"Condo Name:${Name}"}
+                      {"title":"โรงพยาบาล",
+                      "content":"${Name}"}
                     };
           
                     var gra = new Graphic(myPoint);
@@ -327,8 +327,8 @@ require(["esri/map",
                       "yoffset" : 0
                     },
                     "infoTemplate":
-                      {"title":"Test Pop-up windows",
-                      "content":"Condo Name:${Name}"}
+                      {"title":"โรงพยาบาล",
+                      "content":"${Name}"}
                     };
           
                     var gra = new Graphic(myPoint);
@@ -363,8 +363,8 @@ require(["esri/map",
                       "yoffset" : 0
                     },
                     "infoTemplate":
-                      {"title":"Test Pop-up windows",
-                      "content":"Condo Name:${Name}"}
+                      {"title":"โรงพยาบาล",
+                      "content":"${Name}"}
                     };
           
                     var gra = new Graphic(myPoint);
@@ -399,8 +399,8 @@ require(["esri/map",
                       "yoffset" : 0
                     },
                     "infoTemplate":
-                      {"title":"Test Pop-up windows",
-                      "content":"Condo Name:${Name}"}
+                      {"title":"โรงพยาบาล",
+                      "content":"${Name}"}
                     };
           
                     var gra = new Graphic(myPoint);
@@ -436,8 +436,8 @@ require(["esri/map",
                       "yoffset" : 0
                     },
                     "infoTemplate":
-                      {"title":"Test Pop-up windows",
-                      "content":"Condo Name:${Name}"}
+                      {"title":"โรงพยาบาล",
+                      "content":"${Name}"}
                     };
           
                     var gra = new Graphic(myPoint);
@@ -473,7 +473,7 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
+                    {"title":"Cafe",
                     "content":"Condo Name:${Name}"}
                   };
         
@@ -509,7 +509,7 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
+                    {"title":"Cafe",
                     "content":"Condo Name:${Name}"}
                   };
         
@@ -545,7 +545,7 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
+                    {"title":"Cafe",
                     "content":"Condo Name:${Name}"}
                   };
         
@@ -582,7 +582,7 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
+                    {"title":"Cafe",
                     "content":"Condo Name:${Name}"}
                   };
         
@@ -621,8 +621,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"Restuarant",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -657,8 +657,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"Restuarant",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -693,8 +693,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"Restuarant",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -731,8 +731,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"Restuarant",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -767,8 +767,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"Restuarant",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -803,9 +803,9 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
-                  };
+                  {"title":"Restuarant",
+                  "content":"${Name}"}
+                };
         
                   var gra = new Graphic(myPoint);
                   map.graphics.add(gra);
@@ -839,8 +839,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"ร้านสะดวกซื้อ",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -875,8 +875,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"ร้านสะดวกซื้อ",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -911,8 +911,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"ร้านสะดวกซื้อ",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -947,8 +947,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"ร้านสะดวกซื้อ",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -983,8 +983,8 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}"}
+                    {"title":"ร้านสะดวกซื้อ",
+                    "content":"${Name}"}
                   };
         
                   var gra = new Graphic(myPoint);
@@ -1003,9 +1003,9 @@ require(["esri/map",
                     {"XCoord":100.495065,
                      "YCoord":13.646991,
                      "Name":"Parque Condo",
-                     "pic": "Picture/shh1.jpg", 
+                     "pic": "Picture/P.jpg", 
                      "onClick":"document.getElementById('id01').style.display='block'",
-                     "picStyle":"height:100px;width:auto",
+                     "picStyle":"height:auto;width:100%",
                      "class":"image",
                      "scroll":"#about",
                      "mapID":"map"},
@@ -1022,9 +1022,9 @@ require(["esri/map",
                     "yoffset" : 0
                   },
                   "infoTemplate":
-                    {"title":"Test Pop-up windows",
-                    "content":"Condo Name:${Name}  <a href=${scroll}><img onClick=${onClick} src=${pic} style=${picStyle} > </a>"}
-                  };
+                  {"title":"Condo",
+                  "content":"<h4>${Name}</h4>  <img  src=${pic} style=${picStyle} > <br> <h6> คอนโดทำเลศักยภาพ ตั้งอยู่บนถนนพุทธบูชา เชื่อมต่อกับถนนสายหลักหลายเส้นทาง เช่น ประชาอุทิศ สุขสวัสดิ์ พระราม2 ใกล้ทางด่วนสุขสวัสดิ์ รองรับเส้นทางการคมนาคมในอนาคต (สถานีรถไฟฟ้าประชาอุทิศ รถไฟฟ้าสายสีม่วงเตาปูน-ราษฎร์บูรณะ) สะดวกต่อการเดินทาง ใกล้มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (บางมด) มีสิ่งอำนวยความสะดวกบริเวณใกล้เคียงมากมาย เช่น Lotus ประชาอุทิศ Max Value ตลาดทุ่งครุ สำนักงานเขตทุ่งครุ  </h6> <br> <a href=${scroll}> <h6 onClick=${onClick}>คลิกที่นี่เพื่อดูรายละเอียดห้อง</h6> </a>"}
+                };
         
                   var gra = new Graphic(myPoint);
                   map.graphics.add(gra);
@@ -1040,10 +1040,12 @@ require(["esri/map",
                     "attributes":
                       {"XCoord":100.498031,
                        "YCoord":13.654933,
-                       "Name":"Library Houze Condo                     ",
-                       "onClick":"document.getElementById('id01').style.display='block'",
-                       "picStyle":"height:100px;width:auto",
+                       "pic": "Picture/L.jpg",
+                       "Name":"Library Houze Condo",
+                       "onClick":"document.getElementById('id02').style.display='block'",
+                       "picStyle":"height:auto;width:100%",
                        "class":"image",
+                       "scroll":"#about",
                        "mapID":"map"},
                     "symbol":
                     {
@@ -1058,9 +1060,9 @@ require(["esri/map",
                       "yoffset" : 0
                     },
                     "infoTemplate":
-                      {"title":"Test Pop-up windows",
-                      "content":"Condo Name:${Name}"}
-                    };
+                    {"title":"Condo",
+                    "content":"<h4>${Name}</h4>  <img  src=${pic} style=${picStyle} > <br> <h6> คอนโดฯ ใกล้มหาวิทยาลัย ราคาเริ่มต้น 1.44 ล้านบาท ไลบรารี่ เฮ้าซ์ คอนโดใกล้มหาวิทยาลัย (เทคโนบางมด) ประมาณ 300 เมตร จากประตูใหญ่ ติดถนนใหญ่ประชาอุทิศ การออกแบบได้นำรูปแบบการตกแต่งและฟังก์ชั่นห้องสมุดมาเป็นแนวคิด เพื่อตอบรับการใช้ชีวิตของคนรุ่นใหม่ในวัยศึกษาหรือเริ่มต้นทำงาน เหมาะทั้งซื้อเพื่ออยู่เองหรือลงทุนให้เช่า  </h6> <br> <a href=${scroll}> <h6 onClick=${onClick}>คลิกที่นี่เพื่อดูรายละเอียดห้อง</h6> </a>"}
+                  };
           
                     var gra = new Graphic(myPoint);
                     map.graphics.add(gra);
@@ -1077,10 +1079,12 @@ require(["esri/map",
                     "attributes":
                       {"XCoord":100.499221,
                        "YCoord":13.655017,
-                       "Name":"The Cube Condo                     ",
-                       "onClick":"document.getElementById('id01').style.display='block'",
-                       "picStyle":"height:100px;width:auto",
+                       "Name":"The Cube Condo",
+                       "pic": "Picture/C.jpg",
+                       "onClick":"document.getElementById('id03').style.display='block'",
+                       "picStyle":"height:auto;width:100%",
                        "class":"image",
+                       "scroll":"#about",
                        "mapID":"map"},
                     "symbol":
                     {
@@ -1095,9 +1099,9 @@ require(["esri/map",
                       "yoffset" : 0
                     },
                     "infoTemplate":
-                      {"title":"Test Pop-up windows",
-                      "content":"Condo Name:${Name}"}
-                    };
+                    {"title":"Condo",
+                    "content":"<h4>${Name}</h4>  <img  src=${pic} style=${picStyle} > <br> <h6> แค่ 5 นาที จากจุดขึ้น-ลงทางด่วนสุขสวัสดิ์ ห่างจากสถานีรถไฟฟ้าประชาอุทิศเพียง 2 กม. (รถไฟฟ้าสายสีม่วง เตาปูน-ราษฎร์บูรณะ) สะดวกสบาย เข้า-ออกได้หลายเส้นทาง ทั้งถนนสุขสวัสดิ์ ถนนพระราม 2 ถนนพุทธบูชา และรายล้อมด้วยสิ่งอำนวยความสะดวกรอบด้าน เยื้องมหาวิทยาลัยพระจอมเกล้าธนบุรี (บางมด) ใกล้สวนธนบุรีรมย์ ศูนย์ฝึกกีฬาเฉลิมพระเกียรติ โลตัส จัสโก้ ตลาดใหม่ทุ่งครุ 61</h6> <br> <a href=${scroll}> <h6 onClick=${onClick}>คลิกที่นี่เพื่อดูรายละเอียดห้อง</h6> </a>"}
+                  };
           
                     var gra = new Graphic(myPoint);
                     map.graphics.add(gra);
