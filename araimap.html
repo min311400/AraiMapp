@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ARAIMAP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="CSS/General.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+    <script src="https://js.arcgis.com/3.23/"></script> 
+    <script src="JS/mapESRI.js"></script> 
+    <script src="JS/W3.js"></script> 
+    <script src="JS/SetClass.js"></script> 
+   
+        
+    
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!--________________Menu_NavBar_______________________-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">ARAIMAP</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#roadmap">Select place</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT US</a>
+                </li>
+                <li>
+                        <a href="#map">Sign in</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--________________Heading_______________________-->
+<div class="jumbotron text-center">
+    <h1>ARAIMAP</h1>
+    <h2>Szong Min Punch</h2>
+    <p>"Select your dream home"<p>
+
+
+
+<!--________________Qoute_______________________-->
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">  
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+                <img src="Picture/conn1.jpg" alt="P" style="width:100%">
+        </div>
+
+        <div class="item">
+                <img src="Picture/conn2.jpg" alt="P" style="width:100%">
+        </div>
+
+        <div class="item">
+                <img src="Picture/shh1.jpg" alt="P" style="width:100%">
+        </div>
+
+        <div class="item">
+            <img src="Picture/shh2.jpg" alt="P" style="width:100%">
+        </div>
+
+        <div class="item">
+            <img src="Picture/shh3.jpg" alt="P" style="width:100%">
+        </div>
+
+        <div class="item">
+            <img src="Picture/thh1.jpg" alt="P" style="width:100%">
+        </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+
+<!--________________Select location type you want_______________________-->
+ <div id="roadmap" class="container-fluid bg text-center">
+    <h1 class="one">Select location type you want</h1>
+    <h4>What is your draem place?</h4>
+    <script language="javascript">
+            function fncSubmit() {
+                if (document.typeR.R1.checked == true || document.typeR.R2.checked == true || document.typeR.R3.checked == true) {
+                    return false;              
+                }
+                document.form1.submit();
+            }
+        </script>
+    <form action="" method="post" name="typeR" onSubmit="JavaScript:return fncSubmit();">
+            <input type="radio" name="tR" id="R1" value="Single Home"> Single Home </input> &nbsp&nbsp
+            <input type="radio" name="tR" id="R2" value="Condominium"> Condominium </input> &nbsp&nbsp
+            <input type="radio" name="tR" id="R3" value="Townhouse"> Townhouse </input>
+            <button type="submit" name="btnSubmit" class="btn btn-info btn-lg" data-toggle="modal" onclick="Func1()" data-target="#myModal">Select</button>
+    
+    </form>
+    <script>
+            function Func1() {
+                if (document.typeR.R1.checked == true) {
+                    document.getElementById("field2").value = document.getElementById("R1").value;
+                }
+                else if (document.typeR.R2.checked == true) {
+                    document.getElementById("field2").value = document.getElementById("R2").value;
+                }
+                else if (document.typeR.R3.checked == true) {
+                    document.getElementById("field2").value = document.getElementById("R3").value;
+                }
+            }
+    </script>
+    <br>
+    
+    
+
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content text-left" style="margin-top:20%">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        Choose: <input type="text" id="field2" disabled="disabled">
+                        <br><br>
+                        <h3 class="modal-title"></h3>
+                        จำนวนผู้อาศัย
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select> คน <br>
+                        รัศมี
+                        <select>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                        </select> กิโลเมตร <br>
+                        ราคา
+                        <select>
+                            <option value="1">5,000-10,000</option>
+                            <option value="2">10,001-15,000</option>
+                            <option value="2">15,001-20,000</option>
+                            <option value="2">20,001-25,000</option>
+                            <option value="3">25,001-30,000</option>
+                            <option value="4">30,001-35,000</option>
+                            <option value="5">35,001-40,000</option>
+                            <option value="6">40,001-45,000</option>
+                        </select> บาท <br><br>
+                        สิ่งอำนวยความสะดวก
+                        <table style="width:100%">
+                            <tr>
+                                <td><input type="checkbox" name="" value="bus"> สถานีรถประจำทาง</td>
+                                <td><input type="checkbox" name="" value="res"> ร้านอาหาร</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" value="sch"> โรงเรียน</td>
+                                <td><input type="checkbox" name="" value="hos"> โรงพยาบาล</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" value="mini"> ร้านสะดวกซื้อ</td>
+                                <td><input type="checkbox" name="" value="poli"> สถานีตำรวจ</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" value="mall"> ห้างสรรพสินค้า</td>
+                                <td><input type="checkbox" name="" value="ent"> สถานบันเทิง</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>&nbsp&nbsp<form action="" onclick=""></form><input type="submit" value="Submit"></td>
+                            </tr>
+                        </table> <br>
+
+
+                    </div>
+                    
+                    
+            </div>
+
+        </div>
+    </div>
+
+<div id="road" class="container-fluid bg-grey text-center">
+    <div class="row">
+        <div class="col-sm-12 slideanim">
+            
+            <div id="map" style ="width:100%; height:500px">
+                    <div id="Search" class="text-center"></div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<!--________________Modal for Map_______________________-->
+<div class="w3-container text-center" >
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top modal-sm " style="background-color: #fff;width: 50%">
+      <header class="w3-container one">
+        <a href="#roadmap"> 
+            <span onclick="document.getElementById('id01').style.display='none'"class="w3-button w3-display-topright">&times;</span>
+        </a>
+        <h2>Parque Condo</h2>
+      </header>
+      <div class="w3-container">
+
+        <div class="Content1">
+            <h4>ห้อง 304 ขนาด 27 ตรม</h4>
+            <img  src="Picture/in.jpg" style="height: auto; width: 100%">
+        </div>
+
+        <div class="Content3">
+            <h4>ห้อง 702 ขนาด 27 ตรม</h4>
+            <img  src="Picture/in1.jpg" style="height: auto; width: 100%">
+        </div>
+
+        <div class="Content2 w3-hide">
+            <h4>ห้อง 304 ขนาด 27 ตรม</h4>
+            <img  src="Picture/pro.jpg" style="height: auto; width: 10%; text-align: left">
+            <h4>อุทิศ ประชา</h4>
+            <h4>096 xxx xxxx</h4>
+            <br>
+            <img  src="Picture/in.jpg" style="height: auto; width: 100%">
+            <p>ห้องที่ 304 ขนาด 27 ตร.ม.
+                    2 ห้องนอน 1 ห้องน้ำ
+                    ระเบียงอยู่ทางฝั่งตะวันออก  
+                    เห็นวิวห้องน้ำ
+            </p>
+            <img  src="Picture/star.png" style="height: auto; width: 100%">
+        </div>
+
+        <div class="Content4 w3-hide">
+                <h4>ห้อง 702 ขนาด 27 ตรม</h4>
+                <img  src="Picture/pro.jpg" style="height: auto; width: 10%; text-align: left">
+                <h4>สวัสดิ์ สุขขา</h4>
+                <h4>081 xxx xxxx</h4>
+                <br>
+                <img  src="Picture/in1.jpg" style="height: auto; width: 100%">
+                <p>ห้องที่ 702 ขนาด 35 ตร.ม.
+                        1 ห้องนอน 1 ห้องน้ำ
+                        ระเบียงอยู่ทางฝั่งทิศใต้  
+                        เห็นวิวสระว่ายน้ำ
+                </p>
+                <img  src="Picture/star.png" style="height: auto; width: 100%">
+            </div>
+
+      </div>
+      <footer class="w3-container one" >
+        <p>Parque Condo</p>
+      </footer>
+    </div>
+  </div>
+</div>
+</div>
+<!--________________End of modal for map_______________________-->
+
+
+
+<!--________________About_______________________-->
+<div id="about" class="container-fluid">
+    <h1 class = "one">About us</h1>
+    <br><br>
+    <div class="row">
+
+        <div class="col-sm-8">
+            <h2>ARAI MAP</h2>
+            <h4>เป็นแอพลิเคชั่ระบุตำแหน่งสิ่งอำนวยความสะดวกต่าง ๆ ในแผนที่ 
+                เพื่อช่วยในการตัดสินใจเลือกที่อยู่อาศัยของผู้ใช้งาน โดยจะระบุสถานที่สำคัญต่าง ๆ 
+                เช่น ห้างสรรพสินค้า มินิมาร์ท โรงพยาบาล โรงเรียน ป้ายขึ้น-ลงรถโดยสารประจำทาง สถานีรถไฟฟ้า BTS MRT 
+                โดยบอกข้อมูลของสิ่งเหล่านี้ในระนะขอบเขตที่ผู้ใช้กำหนด และรายละเอียดต่างๆของสถานที่ 
+                เพื่อช่วยให้ผู้ใช้สามารถตัดสินใจเลือกที่อยู่อาศัยได้ตรงกับความต้องการของตนเอง  
+            </h4>    
+            <br><br>
+            <button class="btn btn-lg">More about us</button>
+        </div>
+
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-globe logo slideanim"></span>
+        </div>
+
+    </div>
+</div>
+
+<!--________________contact_______________________-->
+<div id="contact" class="container-fluid bg-grey">
+    <h1 class="text-center one ">Contact</h1>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-5">
+            <h4>ติดต่อสอบถาม หรือแจ้งปัญหา</h4>
+            <p>หลังจากที่ทำการแจ้งเรื่องมาแล้วทาง จะทำแจ้งว่าได้รับเรื่องที่แจ้งภายใน 24 ชั่วโมง ไม่ทางใดก็ทางหนึ่ง</p>
+            <p>
+                <span class="glyphicon glyphicon-map-marker"></span> IT Support</p>
+            <p>
+                <span class="glyphicon glyphicon-phone"></span> 02 xxx xxxxx</p>
+            <p>
+                <span class="glyphicon glyphicon-envelope"></span> example@mail.com</p>
+        </div>
+        <div class="col-sm-7">
+
+            <div class="col-sm-6 form-group">
+                <input class="form-control grey" id="name" name="name" placeholder="ชื่อ-นามสกุล" type="text" required>
+            </div>
+
+            <div class="col-sm-6 form-group">
+                <input class="form-control grey" id="phone" name="phone" placeholder="เบอร์โทรศัพท์" type="text" required>
+            </div>
+
+            <div class="col-sm-6 form-group">
+                <input class="form-control grey" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+
+            <div class="col-sm-12 form-group">
+                <input class="form-control grey" id="address" name="address" placeholder="ที่อยู่" type="text" required>
+            </div>
+
+            <textarea class="col-sm-12 form-control grey" id="comments" name="comments" placeholder="รายละเอียด" rows="5"></textarea>
+            <br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right grey" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>ARAIMAP Web page Made By Tossaporn Kongsaen <br> and this is my
+        <a href="https://github.com/min311400" title="mil311400">Github</a>
+    </p>
+</footer>
+
+</html>
